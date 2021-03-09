@@ -9,13 +9,21 @@
     <div class="container">
       <form method="post">
           <h1>Cadastrar equipamento</h1>
-          <label>Tipo de Equipamento:</label>
-          <input type="text" required>
+          <select id="equipamento" name="equipamento">
+            <option value="Computador">Computador</option>
+            <option value="mouse">Mouse</option>
+            <option value="mercedes">Teclado</option>
+            <option value="audi">Fone</option>
+          </select>
           <label>Modelo:</label>
           <input type="text" required>
           <label>Nro. Serie:</label>
+          <input type="text" minlength="6" required>
+          <label>Marca:</label>
           <input type="text" required>
-          <br><input type="submit" value="Enviar">
+          <label>Observações:</label>
+          <input type="text" minlength="50" maxlength="300" required><br>
+          <input type="submit" value="Salvar">
       </form>
     </div>
   </body>
